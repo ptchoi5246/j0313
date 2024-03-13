@@ -1,6 +1,6 @@
-package api2_Spring;
+package api4_String;
 
-public class T2_indexOf { //중간에 어떤 글자가 있냐 없냐
+public class T02_indexOf { //중간에 어떤 글자가 있냐 없냐
 	public static void main(String[] args) {
 		//                       1         2      
 		//             012345678901234567890

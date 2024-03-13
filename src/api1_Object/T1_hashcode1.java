@@ -29,15 +29,12 @@ class Bb {
 		return name.hashCode();
 	}
 	//객체의 동등비교 : hashCode와 equals로 비교했을 때 같으면 같다.
-	
 }
-
 
 public class T1_hashcode1 {
 	public static void main(String[] args) {
-		//HashMap
+		//HashMap :: HashCode 주소와 데이터 같으면 같다고 출력된다.
 		HashMap<Integer, String>  map = new HashMap<>(); //타입을 여러개해서 분리해서 비교하는 것 : 제너릭
-		
 		
 		map.put(1, "데이터1");
 		map.put(1, "데이터2"); //map 에서는 키가 같으면 밸류가 덮어쓴다.
@@ -56,10 +53,6 @@ public class T1_hashcode1 {
 		map3.put(new Bb("첫번째"), "데이터2");
 		map3.put(new Bb("두번째"), "데이터3");
 		System.out.println(map3);
-		
-		
-		
-		
-		
+			
 	}
 }

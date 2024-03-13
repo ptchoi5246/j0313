@@ -37,10 +37,6 @@ public class T1_hashcode2 {
 		System.out.println("13(hashCode)=> s1 : " + s1.hashCode() + ", s4 : " + s4.hashCode()); //같다
 		System.out.println("14(hashCode)=> s4 : " + s4.hashCode() + ", s5 : " + s5.hashCode()); //같다
 		//hashCode = 객체 속성을 알려주는 
-		
-		
-		
-		
-		
+			
 	}
 }

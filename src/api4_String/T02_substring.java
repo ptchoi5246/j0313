@@ -1,6 +1,6 @@
-package api2_Spring;
+package api4_String;
 
-public class T2_substring {
+public class T02_substring {
 	public static void main(String[] args) {
 		//                       1         2      
 		//             012345678901234567890
