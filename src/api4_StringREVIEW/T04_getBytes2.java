@@ -1,12 +1,13 @@
-package api4_String;
+package api4_StringREVIEW;
 
 import java.io.UnsupportedEncodingException;
 //웹 : 파일 업로드, 다운로드 
-public class T04_getBytes {
+public class T04_getBytes2 {
+//문자열을 byte로 인코딩하여 byte 배열에 넣어서 반환해준다
 	public static void main(String[] args) {
 		//아스키코드 - 영문1글자 : 1Byte, 한글1글자 : 2Byte
 		//EUC-KR 유럽형 한글 - 영문1글자 : 1Byte, 한글1글자 : 2Byte
-		//유니코드 UTF-8 -  영문1글자 : 1Byte, 한글1글자 : 3Byte
+		//유니코드 UTR-8 -  영문1글자 : 1Byte, 한글1글자 : 3Byte
 		String str1 = "안녕하세요!";
 		String str2 = "Hello!";
 		
@@ -20,7 +21,6 @@ public class T04_getBytes {
 		byte[] b2 = str2.getBytes();  //무조건 쓴다.
 		System.out.println("b2의 길이 : " + b2.length); //6Byte
 		System.out.println();
-		
 		
 		//인코딩 : 코드를 바꾸는 것 /디코딩 : 인코딩 복화
 		//자료 보낼때 Byte getBytes 인코딩 , 자료 받을 때 디코딩
@@ -70,9 +70,9 @@ public class T04_getBytes {
 			str4 = new String(b4, "UTF-8");
 			System.out.println("str4 : " + str4);
 			System.out.println();
-			
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
-		}		
+		}
 	}
 }
+// 다시 찬찬히 읽어보기
