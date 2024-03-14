@@ -1,4 +1,4 @@
-package api9_Ex;
+package api0_Ex;
 
 /*
   콘솔을 통해서 아이디를 입력받는다.

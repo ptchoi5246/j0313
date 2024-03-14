@@ -5,6 +5,7 @@ import java.util.HashMap;
 public class T08_valueOf2 { //toString과 마찬가지로 형변환
 	public static void main(String[] args) {
 	//String.valueOf() : ~~자료형들을 '문자열'로 변환한다.
+	//valueOf() : ()안의 객체를 String 객체로 형변환	
 	
 //	int intSu = 1234;
 //	double dblSu = 1234.0;
@@ -39,12 +40,11 @@ public class T08_valueOf2 { //toString과 마찬가지로 형변환
 	int res = a1 + a2;
 	System.out.println(res);
 	
-	String str5 = String.valueOf(a1) + String.valueOf(a2);
-	System.out.println(str5);
+	String str5 = String.valueOf(a1) + String.valueOf(a2); //int a1 = 100 -> String a1 = "100" 
+	System.out.println(str5); //100200
 	
 	// int res6 = (int) String.valueOf(a1) + String.valueOf(a2);
-	int res6 = Integer.parseInt(String.valueOf(a1))  + Integer.parseInt(String.valueOf(a2));
-	System.out.println("res6 : " + res6);
-	
+	int res6 = Integer.parseInt(String.valueOf(a1))  + Integer.parseInt(String.valueOf(a2)); //String을 Integer 형변환
+	System.out.println("res6 : " + res6); //300
 	}
 }

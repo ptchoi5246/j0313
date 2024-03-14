@@ -18,7 +18,7 @@ public class T09_compareTo2 { //문자 비교 메소드
 		System.out.println("c : " + c);
 		System.out.println();
 		
-		//compareTo() : 문자열 비교 메소드(0:동일자료, 음수:앞의 문자열이 뒤의 문자열보다 작을 때, 양수 :앞의 문자열이 뒤의 문자열보다 클 때
+		//compareTo() : 문자열 크기/갯수 비교 메소드(0:동일자료, 음수:앞의 문자열이 뒤의 문자열보다 작을 때, 양수 :앞의 문자열이 뒤의 문자열보다 클 때
 		//a,b,c 비교
 		System.out.println(a.compareTo(b)); //0 같다 //대소문자 차이 //소문자 s -32
 		System.out.println(a.compareTo(c)); //-5 a가 c보다 문자열이 5개 적다?

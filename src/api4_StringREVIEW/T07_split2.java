@@ -2,21 +2,21 @@ package api4_StringREVIEW;
 
 public class T07_split2 {
 	public static void main(String[] args) {
-		//split() : 문자열을 특정 문자(열)로 분리시킨 후 분리된 각각의 항목을 배열로 저장시켜준다.(or 연산자 : |)
+		//String[] split(String regex) : 입력 받은 정규 표현식 또는 특정 문자를 기준으로 문자열을 나누어 배열에 저장하여 리턴
 		
 		String tel = "010-1234-5678";
 		
 		//앞의 전화번호를 '-'으로 분리시킨 후 배열로 저장시켜준다.
 		String[] telArr = tel.split("-");
-		System.out.println(telArr[0]);
-		System.out.println(telArr[1]);
-		System.out.println(telArr[2]);
+		System.out.println(telArr[0]); //010
+		System.out.println(telArr[1]); //1234
+		System.out.println(telArr[2]); //5678
 		System.out.println();
 		
-		//향상된 for
+		//향상된 for : for(자료형 변수명 : 배열명 {문장}
 		String telTemp = "";
 		for(String t : telArr ) {
-			telTemp += t + "/";
+			telTemp += t + "/"; //누적
 		}
 		
 		System.out.println(telTemp);
@@ -41,10 +41,12 @@ public class T07_split2 {
 			nameTemp += name + "/";
 			
 		}
-		System.out.println("성명 : " + nameTemp.substring(0,nameTemp.length()-1));
+		System.out.println("성명 : " + nameTemp.substring(0, nameTemp.length()-1));
+		//이름 제일 마지막 / 제외 출력
 		
 		//방법 2 : join() 배열에 분리 저장되어 있는 항목들을 특정 문제로 결합시켜준다.
 		String nameJoin = String.join("/", nameArr);
 		System.out.println("성명 : " + nameJoin);
  	}
 }
+//방법2 이해 불가
