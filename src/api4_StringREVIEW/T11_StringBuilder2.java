@@ -22,7 +22,7 @@ public class T11_StringBuilder2 {
 		System.out.println("6.str2 :" + str2);
 		System.out.println("7.str2버퍼크기 :" + str2.capacity()); //34
 		
-		str2.insert(2, "abcedfg"); //2번지 위치에 추가해서 삽입 출력
+		str2.insert(2, "abcdefg"); //2번지 위치에 추가해서 삽입 출력
 		System.out.println("8.str2 :" + str2);
 		System.out.println("9.str2버퍼크기 :" + str2.capacity()); //34
 		
@@ -33,7 +33,7 @@ public class T11_StringBuilder2 {
 		str2.delete(5, 20); //5번째부터 20개 지우기
 		System.out.println("12.str2 :" + str2);
 		System.out.println("13.str2버퍼크기 :" + str2.capacity()); //34
-		
-		
+		System.out.println();
+		System.out.println("복습 완료 :)");
 	}
 }

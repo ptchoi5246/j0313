@@ -24,7 +24,7 @@ public class T10_StringBuffer2 {
 		//append : 값을 추가, insert : 값을 삽입 , delete : 특정 위치의 값을 지정한 개수만큼 삭제처리, replace : 치환
 		StringBuffer str2 = new StringBuffer();
 		System.out.println("3.str2버퍼크기 :" + str2.capacity());
-		str2.append("atom");
+		str2.append("atom"); //append() : 이어 붙이기
 		System.out.println("4.str2 :" + str2);
 		System.out.println("5.str2버퍼크기 :" + str2.capacity());
 		
@@ -32,15 +32,14 @@ public class T10_StringBuffer2 {
 		System.out.println("6.str2 :" + str2);
 		System.out.println("7.str2버퍼크기 :" + str2.capacity()); //34
 		
-		str2.insert(2, "abcedfg"); //2번지 위치에 추가해서 삽입 출력
-		System.out.println("8.str2 :" + str2);
+		str2.insert(2, "abcdefg"); //2번지 위치에 추가해서 삽입 출력
+		System.out.println("8.str2 :" + str2); //atabcdefgom0123456789012345
 		System.out.println("9.str2버퍼크기 :" + str2.capacity()); //34
 
 		str2.delete(5, 20); //5번째부터 20개 지우기
-		System.out.println("10.str2 :" + str2);
+		System.out.println("10.str2 :" + str2); //atabc9012345
 		System.out.println("11.str2버퍼크기 :" + str2.capacity()); //34
-		
-		
-		
+		System.out.println();
+		System.out.println("복습 완료 :)");
 	}
 }

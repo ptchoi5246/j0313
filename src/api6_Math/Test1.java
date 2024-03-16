@@ -35,6 +35,7 @@ public class Test1 {
 		System.out.println(Math.round(d1*100) /100.0); 
 		//소수 넷째자리에서의 반올림
 		System.out.println(Math.round(d1*1000) /1000.0);
+		System.out.println();
 		
 		//String.format("%.nf",실수값) = Math.round() 출력값 같다.
 		System.out.println(String.format("%.0f", d1));
@@ -57,9 +58,9 @@ public class Test1 {
 		System.out.println("1.ceil() : " + Math.floor(d1)); //d1 = 1234.5678; //1234.0
 		double d4 = 123.65;
 		System.out.println("2.ceil() : " + Math.floor(d4)); //123.0
-		//소수점 이하 둘째자리에서 무조건 올림
+		//소수점 이하 둘째자리에서 무조건 버림
 		System.out.println("3.ceil()*10 /10 : " + Math.floor(d1*10) /10); //d1 = 1234.5678; //1234.5 //소수이하 첫째자리까지 표시
-		//소수점 이하 셋째자리에서 무조건 올림
+		//소수점 이하 셋째자리에서 무조건 버림
 		System.out.println("4.ceil()*100 /100 : " + Math.floor(d1*100) /100); //d1 = 1234.5678; //1234.56 //소수이하 둘째자리까지 표시
 		System.out.println();
 		
