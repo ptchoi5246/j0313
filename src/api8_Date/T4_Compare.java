@@ -33,7 +33,7 @@ public class T4_Compare {
 		
 		//나노초 자르기
 		String strTarget = targetDateTime.toString();
-		//String bigyoToday = strTempToday.substring(0, strTempToday.indexOf("." ));
+		//String bigyoToda.y = strTempToday.substring(0, strTempToday.indexOf("." ));
 		System.out.println("타겟(비교) 날짜 / 시간 : " + strTarget);
 
 		//날짜와 시간 구분하기 (T 문자를 기준으로 split()메소드 이용하여 자르기)

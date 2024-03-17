@@ -16,7 +16,7 @@ public class T2_Calendar {
 		System.out.println("오늘이 올해 몇번째 주? : " + cal.get(Calendar.WEEK_OF_YEAR));
 		System.out.println("오늘이 일주일의 몇번째 일? : " + cal.get(Calendar.DAY_OF_WEEK)); //일(1),월(2),화(3),수(4),목(5),금(6),토(7)
 		System.out.println(cal.get(Calendar.AM_PM)); //AM: 0 PM: 1
-		
+	
 		int amPm = cal.get(Calendar.AM_PM);
 		String strAmPm = "";
 		if(amPm == Calendar.AM) strAmPm = "오전";
@@ -43,14 +43,6 @@ public class T2_Calendar {
 		}
 			System.out.println("오늘은 " + strWeek + "요일 입니다.");	
 			
-	
-		
-		
-		
-		
-		
-		
-		
-		
+			
 	}
 }
